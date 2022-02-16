@@ -1,0 +1,7 @@
+name: PvPPractice
+version: '${project.version}'
+main: rama.pvppractice.PvPPractice
+api-version: 1.17
+depend: [ WorldGuard ]
+authors: [ ImRama ]
+description: Practice PvP without any risk with WG Regions

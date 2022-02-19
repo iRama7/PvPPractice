@@ -66,9 +66,10 @@ public class ListenerClass implements Listener {
         int P2X = -5845;
         int P2Z = -20;
 
-        Boolean isInRegion = X > P1X && X < P2X && Z > P2Z && Z < P1Z;
+        Boolean isBetweenCoords = X > P1X && X < P2X && Z > P2Z && Z < P1Z;
+        Boolean isInWorld = player.getWorld().getName().equalsIgnoreCase("spawn");
 
-        if(isInRegion){
+        if(isBetweenCoords && isInWorld){
             e.setCancelled(true);
         }return;
 
